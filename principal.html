@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kimetsu no Yaiba</title>
+  <link rel="stylesheet" href="LaMeraMera.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="logo" src="logo.webp" alt="Logo Kimetsu no Yaiba" />
+      <h1>Kimetsu no Yaiba — Castillo Infinito</h1>
+    </div>
+
+    <nav class="site-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu">
+        <li><a >Sinopsis</a></li>
+        <li><a >Tráiler</a></li>
+        <li><a >Fechas</a></li>
+        <li><a class="btn btn-primary">Comprar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="hero">
+      <picture>
+        <source srcset="Poster_w4ek0r/Poster_w4ek0r_c_scale,w_1024.webp" media="(min-width:1200px)">
+        <source srcset="Poster_w4ek0r/Poster_w4ek0r_c_scale,w_899.webp"  media="(min-width:768px)">
+        <img src="Poster_w4ek0r/Poster_w4ek0r_c_scale,w_501.webp" alt="Tanjiro y compañía en póster de la película">
+      </picture>
+      <div class="hero-content">
+        <h2>Estreno oficial</h2>
+        <p> En efecto, nos inpiramos en el estreno de la peli , porque se viene la película más top de Ufatable. ¿Está listo para llorar? Ay,yo no.</p>
+        <a id="boletos" href="#" class="btn btn-primary">Comprar boletos</a>
+      </div>
+    </section>
+
+    <section id="sinopsis" class="card">
+      <h3>Sinopsis</h3>
+      <p>Tras los eventos del Arco del Entrenamiento, los Cazadores de Demonios enfrentan su prueba definitiva. Lealtades, destino y coraje se ponen a prueba en un cierre inolvidable.</p>
+      <div class="chips">
+        <span class="chip">Acción</span>
+        <span class="chip">Aventura</span>
+        <span class="chip">Shōnen</span>
+      </div>
+    </section>
+
+    <aside class="side card">
+      <h3>Datos rápidos</h3>
+      <ul class="facts">
+        <li>Duración: 1h 55m</li>
+        <li>Estudio: ufotable</li>
+        <li>Formato: 2D / IMAX</li>
+        <li>Clasificación: PG-13</li>
+      </ul>
+
+      <div class="cta-box">
+        <p>¿Listo para el estreno?</p>
+        <a class="btn btn-outline" >Ver funciones</a>
+      </div>
+    </aside>
+
+    <section id="trailer" class="card">
+      <h3>Tráiler</h3>
+      <div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1iBnWJKbvHI?si=wKJF1kEtEZVINfFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="fechas" class="card schedule">
+      <h3>Funciones y ciudades</h3>
+      <ul class="grid-fechas">
+        <li>
+          <h4>San Salvador</h4>
+          <p>Desde 26/09 · 4:00, 6:30, 9:00 pm</p>
+          <a class="btn btn-small" >Elegir sala</a>
+        </li>
+        <li>
+          <h4>Santa Tecla</h4>
+          <p>Desde 27/09 · 5:00, 7:30 pm</p>
+          <a class="btn btn-small"> Elegir sala</a>
+        </li>
+        <li>
+          <h4>San Miguel</h4>
+          <p>Desde 27/09 · 4:30, 7:00 pm</p>
+          <a class="btn btn-small" >Elegir sala</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p> Fátima Rámirez y Daniela Romero</p>
+    <nav class="footer-nav">
+      <a >Aviso de privacidad</a>
+      <a >Términos</a>
+    </nav>
+  </footer>
+
+  <script>
+    //  menú móvil
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('open');
+    });
+    
+  </script>
+</body>
+</html>
