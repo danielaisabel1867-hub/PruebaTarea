@@ -138,6 +138,7 @@ body {
   .site-header h1 { font-size: 1.1rem; }
   .grid-fechas { grid-template-columns: repeat(2, 1fr); }
 }
+
 /* ≥ 768px (Tablets) */
 @media (min-width: 768px) {
   .site-nav .nav-toggle { display: none; }
